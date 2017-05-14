@@ -1,0 +1,57 @@
+<article id="chat-content">
+
+    <header id="main-header">
+
+        <nav class="row full-height">
+            <div class="col-sm-4 full-height align-vert-center"><i class="fa fa-user fa-2x icon-pad-2" aria-hidden="true"></i> <span class="highlight text-white js-current-user">Nome do usuário logado</span></div>
+            <div class="col-sm-offset-5 col-sm-1 full-height align-vert-center">
+                <button type="button" class="btn btn-main-header full-height" style="padding-right: 24px;"> 
+                    <span class="highlight text-white"><i class="fa fa-envelope fa-1x icon-pad" aria-hidden="true"></i> Inbox</span>
+                </button></div>
+            <div class="col-sm-offset-0 col-sm-2 full-height align-vert-center">
+                <span class="highlight text-white full-height align-vert-center chat-users-title"><i class="fa fa-users icon-pad-2" aria-hidden="true"></i> Usuários</span>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="jumbotron" id="messages-box" class="col-sm-10">
+
+        <div class="chat-messages container clearfix pre-scrollable"></div>
+
+    </div>
+
+    <!-- Painel para exibir os usuários conectados -->
+    <div id="users-box" class="col-sm-2">
+
+        <div class="list-group box-online-users pre-scrollable">
+        </div>
+
+    </div>
+
+    <!-- Painel para o usuário digitar sua mensagem -->
+    <div id="in-message-box" class="col-sm-10 clearfix">
+
+        <div>
+            <!--<input id="in-message" type="text" name="message" placeholder="Digite aqui sua mensagem..." disabled="disabled" />-->
+            <div class="input-group input-group-lg message-input">
+                <input id="in-message" type="text" class="form-control" disabled="disabled" placeholder="Digite sua mensagem aqui...">
+                <span class="input-group-btn">
+                     <button id="btn-send-message" disabled="disabled" class="btn btn-default" type="button">Enviar</button>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="connection-down">
+        <h1>Sua conexão caiu</h1>
+        <p>Clique no botão abaixo para tentar se conectar novamente!</p> <button type="button">Conectar</button>
+    </div>
+
+</article>
+
+<!-- Rodapé da página -->
+<footer>
+
+</footer>

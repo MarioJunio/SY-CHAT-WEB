@@ -1,0 +1,498 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: gray;
+}
+
+.row {
+    margin: 0px !important;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100% !important;
+    background-color: #fff !important;
+}
+
+html, body {
+    overflow-y: hidden;
+}
+
+#app-conteudo {
+    height: 100% !important;
+}
+
+#connection-down {
+    display: none;
+}
+
+#main-header {
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+    border-top: 4px solid #CCC;
+}
+
+#chat-content {
+    height: 100%;
+}
+
+#messages-box {
+    float: left;
+    height: 70%;
+    position: relative;
+    top: 20px;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    border-radius: 0px 6px 6px 0px;
+}
+
+#users-box {
+    float: right;
+    padding-right: 0 !important;
+    height: 100%;
+}
+
+#in-message-box {
+    margin-top: 50px;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -220px;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.align-vert-center {
+    display: flex;
+    align-items: center;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.text-white {
+    color: gray !important;
+}
+
+.icon-pad {
+    padding: 6px;
+    color: gray;
+}
+
+.icon-pad-user-status {
+    padding: 6px;
+    color: springgreen;
+}
+
+.icon-pad-2 {
+    padding: 10px;
+    color: gray;
+}
+
+.btn-main-header {
+    color: #FFF;
+    font-weight: bold !important;
+    border-radius: 0px !important;
+    background-color: #d6d6d6;
+}
+
+.btn-main-header:hover {
+    color: #FFF !important;
+}
+
+.no-background {
+    background: transparent;
+}
+
+.btn-close {
+    position: relative;
+    left: 40px;
+}
+
+.chat-messages {
+    /*margin: 30px 0px 0px 10px;*/
+    /*padding: 5px;*/
+    overflow-y: scroll;
+    /*background-color: lightblue;*/
+    /*border-radius: 6px;*/
+    height: 100%;
+    max-height: 100% !important;
+    /*border: 0.5em solid #72bcd4;*/
+}
+
+.chat-input-message {
+    margin: 0px 20px 20px 20px;
+    overflow-y: scroll;
+    border: 1px solid #72bcd4;
+    background-color: #FFF;
+    border-radius: 100px;
+}
+
+.chat-users {
+    width: 100%;
+    height: 92.2%;
+}
+
+.box-online-users {
+    max-height: 100% !important;
+    border-radius: 0px !important;
+    border-right: none;
+}
+
+.user {
+    border: 1px solid #eee !important;
+}
+
+.user:first-child {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-top: none;
+}
+
+.chat-users li {
+    font-size: 13px;
+    font-weight: bold;  
+    color: #8e8e8e !important;
+    list-style: none;
+    padding: 5px;
+    border-bottom: 1px solid #EEE;
+}
+
+.chat-users-title {
+    padding-bottom: 5px;
+    font-weight: bold;
+    margin: 0px;
+    margin-left: 4px;
+    width: 100%;
+    position: relative;
+    left: 30px;
+    top: 3px;
+}
+
+.js-list-users {
+    height: 100%;
+    max-height: 100% !important;
+}
+
+.subject-message {
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    color: gray;
+}
+
+.warning {
+    font-weight: bold;
+    font-size: 14px;
+    color: darkred;
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+	margin: 20px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    position: relative;
+    width: auto;
+	height: auto;
+	background-color: lightyellow;
+    border-radius: 5px;
+}
+
+.border{
+  border: 8px solid #666;
+}
+
+.message-input {
+    width: 90% !important;
+    margin: 0 auto !important;
+}
+
+.round {
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+.message-received-date {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 7px !important;
+    min-width: 100px !important;
+}
+
+.jumbotron p {
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
+
+/* Boostrap overrides */
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding: 0px !important;
+}
+
+/* Right triangle placed top left flush. */
+.tri-right.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 0px;
+	bottom: auto;
+	border: 22px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+/* Right triangle, left side slightly down */
+.tri-right.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -8px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+}
+.tri-right.btm-left:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 22px solid;
+	border-color: transparent transparent transparent lightyellow;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 38px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent lightyellow;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 30px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+
+.tri-right.btm-right-in:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 38px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+/*
+	left: -8px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+	left: 0px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 22px solid;
+	border-color: transparent transparent transparent lightyellow;
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -8px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+
+.tri-right.btm-right:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 0px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: -20px;
+    top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent lightyellow;
+}
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 0px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+/* talk bubble contents */
+.talktext{
+    text-align: left;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 15px;  
+    padding-bottom: 5px;
+
+}
+.talktext p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.new-user {
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
